@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* default styles */
+* {
+  margin: 0;
+}
+
+.container {
+  max-width: 85%;
+  margin: 5rem auto;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-flex {
+  display: flex;
+}
+/* dark 02 */
+.text-black {
+  color: #1d1d1f;
+}
+/* dark 03 */
+.text-light-black {
+  color: #1d1d1fbf;
+}
+
+.bg-light {
+  background-color: rgba(243, 252, 247, 1);
+}
+.btn-primary {
+  background-color: #06c167;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+}
+
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: auto;
+}
+.brand {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #06c167;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #06C167;
+}
+
+.banner {
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+.banner-content {
+  width: 533px;;
+}
+.banner-title{
+  font-size: 4.7rem ;
+  margin-bottom: 1.5rem;
+}
+
+.banner-image img {
+  width: 100%;
+}
+/* Features styles */
+.features {
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 40px 0;
+  margin: auto;
+}
+
+.feature {
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  padding: 20px 15px;
+  border-radius: 15px;
+  background-color: rgba(243, 252, 247, 1);
+}
+.icon i {
+  color: #06c167;
+  font-size: 2rem;
+}
+
+
+/* Healthy Section Styles */
+.healthy-section {
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: auto;
+}
+
+.image-side {
+  max-width: 541px;
+  background-color: #c0cec6;
+}
+
+.image-side img {
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.text-side {
+  max-width: 540px;
+}
+
+.small-text {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.text-side h1 {
+  font-size: 42px;
+  color: #222;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.text-side ul {
+  list-style: none;
+}
+
+.text-side li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.text-side li::before {
+  content: "✔️ ";
+  color: green;
+}
+
+/* Gradients Container */
+.gradients-container {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 19, 0.8) 50%,
+      rgba(19, 19, 19, 0.8) 50%
+    ),
+    url("./assets/image/gradient.png");
+  padding: 7rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.gradients-title h2{
+  width: 780px;
+  color: white;
+  font-size: 3.7rem;
+  text-align: center;
+}
+
+.gradients-title, .btn-primary{
+  margin-top: 2rem;
+  text-align: center;
+}
