@@ -36,7 +36,7 @@
   color: #06c167;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
 }
 .nav-item {
@@ -121,14 +121,14 @@
   left: -50px;
   font-weight: 500;
 }
-.rating-font{
+.rating-font {
   color: #1d1d1f;
 }
 
-.star{
+.star {
   color: #06c167;
 }
-.quality-box img{
+.quality-box img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -173,17 +173,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
+  margin-bottom: 3rem;
 }
 
-.image-side {
-  max-width: 541px;
-  background-color: #c0cec6;
-}
-
-.image-side img {
-  width: 100%;
-  padding: 20px 20px;
+.image .imgg {
+  width: 445px;
+  height: 513px;
+  position: absolute;
+  right: 8%;
 }
 
 .text-side {
@@ -218,40 +215,90 @@
   color: #06c167;
 }
 
-/* Gradients Container */
-.gradients-container {
-  background-image: linear-gradient(
-      180deg,
-      rgba(19, 19, 19, 0.8) 50%,
-      rgba(19, 19, 19, 0.8) 50%
-    ),
-    url("./assets/image/gradient.png");
-  padding: 7rem 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+/* Veggie Food Section */
+.container-veggie {
+  margin-top: 3rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.gradients-title h2 {
-  width: 780px;
-  color: white;
-  font-size: 3.7rem;
+.content {
+  flex: 1;
+  width: 570px;
+}
+
+.content small {
+  color: #555;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.content h2 {
+  font-size: 3.75rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
   text-align: center;
 }
 
-.gradients-title,
-.btn-primary {
-  margin-top: 2rem;
-  text-align: center;
+.stat-box h3 {
+  color: #06c167;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  color: #555;
+  font-size: 14px;
+}
+
+.image {
+  background-color: rgba(243, 250, 251, 1);
+  max-width: 541px;
+  height: 608px;
+  flex: 1;
+  position: relative;
+}
+
+.image img {
+  width: 445px;
+  height: 531px;
+  position: absolute;
+  right: 0;
 }
 
 /* variety section */
 .variety-content {
   text-align: center;
+}
+
+.variety-content small {
+  color: #1d1d1f;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.variety-content h2 {
+  font-size: 3.75rem;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  color: #1d1d1f;
 }
 .food-items {
   display: grid;
@@ -272,12 +319,28 @@
 }
 
 .food-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   padding: 2rem;
 }
 
 .food-content h3 {
   font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.food-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.food-content a {
+  background-color: rgba(230, 249, 240, 1);
+  color: #06c167;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 10px;
 }
 
 /* Popular Product Section */
@@ -367,6 +430,40 @@
 .buy-btn:hover {
   background-color: #00b050;
   color: #fff;
+}
+
+/* Gradients Container */
+.gradients-container {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 19, 0.8) 50%,
+      rgba(19, 19, 19, 0.8) 50%
+    ),
+    url("./assets/image/gradient.png");
+  padding: 7rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.gradients-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradients-title h2 {
+  max-width: 780px;
+  color: white;
+  font-size: 3.7rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 /* Footer Section */
